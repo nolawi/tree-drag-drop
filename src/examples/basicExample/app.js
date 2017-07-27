@@ -21,23 +21,19 @@ class App extends Component {
       searchFoundCount: null,
       treeData: [
         {
-          title: '`title`',
-          subtitle: '`subtitle`',
+          title: '`BYU`',
+          subtitle: '`BYU Description`',
           expanded: true,
           children: [
             {
-              title: 'Child Node',
-              subtitle: 'Defined in `children` array belonging to parent',
+              title: 'Country',
+              subtitle: 'You have access to countries within your role.',
             },
             {
-              title: 'Nested structure is rendered virtually',
+              title: 'Default values can be pre populated from DB',
               subtitle: (
                 <span>
-                  The tree uses&nbsp;
-                  <a href="https://github.com/bvaughn/react-virtualized">
-                    react-virtualized
-                  </a>
-                  &nbsp;and the relationship lines are more of a visual trick.
+                  You can move things around between section based on role, and business rules.
                 </span>
               ),
             },
@@ -45,27 +41,27 @@ class App extends Component {
         },
         {
           expanded: true,
-          title: 'Any node can be the parent or child of any other node',
+          title: 'BYU options will only move based on buisness rules',
           children: [
             {
               expanded: true,
-              title: 'Chicken',
-              children: [{ title: 'Egg' }],
+              title: 'Store1',
+              children: [{ title: 'Store2' }],
             },
           ],
         },
         {
-          title: 'Button(s) can be added to the node',
+          title: 'Button(s) can be added for additional changes. ',
           subtitle:
-            'Node info is passed when generating so you can use it in your onClick handler',
+            'Name, and other data can also be edited within the tree view',
         },
         {
-          title: 'Show node children by setting `expanded`',
+          title: 'Store3`',
           subtitle: ({ node }) =>
             `expanded: ${node.expanded ? 'true' : 'false'}`,
           children: [
             {
-              title: 'Bruce',
+              title: 'Store4',
               subtitle: ({ node }) =>
                 `expanded: ${node.expanded ? 'true' : 'false'}`,
               children: [{ title: 'Bruce Jr.' }, { title: 'Brucette' }],
@@ -73,7 +69,7 @@ class App extends Component {
           ],
         },
         {
-          title: 'Advanced',
+          title: 'Store5',
           subtitle: 'Settings, behavior, etc.',
           children: [
             {
@@ -97,7 +93,7 @@ class App extends Component {
             {
               expanded: true,
               title: 'Limit nesting with `maxDepth`',
-              subtitle: `It's set to ${maxDepth} for this example`,
+              subtitle: `Description`,
               children: [
                 {
                   expanded: true,
@@ -169,10 +165,10 @@ class App extends Component {
   }
 
   render() {
-    const projectName = 'React Sortable Tree';
+    const projectName = ' Sortable Tree';
     const authorName = 'Chris Fritz';
-    const authorUrl = 'https://github.com/fritz-c';
-    const githubUrl = 'https://github.com/fritz-c/react-sortable-tree';
+    const authorUrl = '';
+    const githubUrl = 'k';
 
     const {
       treeData,
@@ -187,10 +183,8 @@ class App extends Component {
         .join(',\n   ');
 
       global.alert(
-        'Info passed to the button generator:\n\n' +
-          `node: {\n   ${objectString}\n},\n` +
-          `path: [${path.join(', ')}],\n` +
-          `treeIndex: ${treeIndex}`
+        'Manager Name ' +
+          `Detailed info `
       );
     };
 
