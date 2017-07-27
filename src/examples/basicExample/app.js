@@ -118,20 +118,20 @@ class App extends Component {
             },
             {
               title:
-                'Disable dragging on a per-node basis with the `canDrag` prop',
+                'Disable dragging on a per-role',
               subtitle: 'Or set it to false to disable all dragging.',
               noDragging: true,
             },
             {
-              title: 'You cannot give this children',
+              title: 'The Business rules are validated thus unable to move some in tree',
               subtitle:
                 'Dropping is prevented via the `canDrop` API using `nextParent`',
               noChildren: true,
             },
             {
               title:
-                'When node contents are really long, it will cause a horizontal scrollbar' +
-                ' to appear. Deeply nested elements will also trigger the scrollbar.',
+                'You can have a long tree ' +
+                'Or a short tree.',
             },
           ],
         },
@@ -166,7 +166,7 @@ class App extends Component {
 
   render() {
     const projectName = ' Sortable Tree';
-    const authorName = 'Chris Fritz';
+    const authorName = 'Nolawi';
     const authorUrl = '';
     const githubUrl = 'k';
 
@@ -183,7 +183,7 @@ class App extends Component {
         .join(',\n   ');
 
       global.alert(
-        'Manager Name ' +
+        'Manager Name' +
           `Detailed info `
       );
     };
