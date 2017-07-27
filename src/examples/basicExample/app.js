@@ -21,8 +21,8 @@ class App extends Component {
       searchFoundCount: null,
       treeData: [
         {
-          title: '`BYU`',
-          subtitle: '`BYU Description`',
+          title: '`BMU`',
+          subtitle: '`BMU Description`',
           expanded: true,
           children: [
             {
@@ -30,7 +30,7 @@ class App extends Component {
               subtitle: 'You have access to countries within your role.',
             },
             {
-              title: 'Default values can be pre populated from DB',
+              title: 'RegionCode',
               subtitle: (
                 <span>
                   You can move things around between section based on role, and business rules.
@@ -41,22 +41,22 @@ class App extends Component {
         },
         {
           expanded: true,
-          title: 'BYU options will only move based on buisness rules',
+          title: 'BMU options will only move based on buisness rules',
           children: [
             {
               expanded: true,
-              title: 'Store1',
+              title: 'MarketCode',
               children: [{ title: 'Store2' }],
             },
           ],
         },
         {
-          title: 'Button(s) can be added for additional changes. ',
+          title: 'Brand ',
           subtitle:
             'Name, and other data can also be edited within the tree view',
         },
         {
-          title: 'Store3`',
+          title: 'RegionCode`',
           subtitle: ({ node }) =>
             `expanded: ${node.expanded ? 'true' : 'false'}`,
           children: [
@@ -69,7 +69,7 @@ class App extends Component {
           ],
         },
         {
-          title: 'Store5',
+          title: 'AreaCode',
           subtitle: 'Settings, behavior, etc.',
           children: [
             {
